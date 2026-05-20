@@ -5,7 +5,7 @@ const getProduct=(req,res)=>{
         res.sendFile(path.join(__dirname,'..','View','index.html'))
 }
 const addProduct=(req,res)=>{
-    const result=productServices.addProduct()
+    const result=productServices.addProduct(req.body)
         res.send(result)
 }
 const getProductwithId=(req,res)=>{

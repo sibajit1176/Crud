@@ -4,8 +4,10 @@ const getAllProducts=()=>{
 const getProductById=(id)=>{
     return `Fetching product with ID: ${id}`;
 }
-const addProduct=()=>{
- return "Adding a new product";
+const addProduct=(data)=>{
+    console.log(data);
+    
+ return data;
 }
 module.exports={
     getAllProducts,

@@ -8,6 +8,9 @@ const port=3000
 
 const app=express()
 
+app.use(express.static('public'))
+app.use(express.json())
+
 app.use('/students',studentRoute)
 app.use('/courses',courseRoute)
 app.use('/cart',cartRoutes)
